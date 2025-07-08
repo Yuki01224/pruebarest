@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
+const palapaController = require('../controllers/palapaController')
 
-router.get('/bebidas', (req, res) => {
-    res.json({ mensaje: "Hola mundo" })
-});
+router.get('/bebidas', palapaController.buscarTodo)
 
 module.exports=router
+
