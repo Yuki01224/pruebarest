@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const palapaSchema = mongoose.Schema({
     nombre:{
     type:String,
-    require:true
+    required:true
     },
     descripcion:{
         type:String,
